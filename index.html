@@ -1,0 +1,87 @@
+<!--Basic Hellow World App
+    Will Welker williamwelker.com
+    This is a Blend4Web application
+    blend4web.com
+-->
+
+
+
+<!DOCTYPE html>                  <!--Indicates that this is an HTML5 document-->
+<html>                           <!--opening HTML tag, everything goes inside this tag-->
+<head>                           <!--opening head tag, the title and information about your page go in this tag-->
+     <title>Hello World!</title> <!--This title will appear in the tab of your browser -->
+     <meta charset="UTF-8">      <!--UTF-8 - Character encoding for Unicode -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--Sizing information for mobile devices-->
+
+    <link href="styles.css" rel="stylesheet" type="text/css"/>    <!--This tells the browser to load the hello_world.css style sheet and do what is says-->
+     <script type="text/javascript" src="b4w.min.js"></script>         <!--This tells the browser to load b4w.min.js. This is the blend4web engine that does all the work-->
+     <script type="text/javascript" src="hello_world.js"></script>     <!--This tells the browser to load hello_world.js this is the file that you write to control your app-->
+
+
+
+</head>     <!--closing head tag-->
+<body>      <!--opening body tag, most of the stuff you see on a website goes in this tag-->
+
+     <div id="background_app"></div>   <!-- This is the div container that holds the app.  We gave it the ID of "background_app". Both the JS and CSS files use the ID to target this element.  The CSS file tells this container to stay statically in the background. hello_world.js loads all your JSON export data into this container. This div element is opened and closed so no other elements are inside it-->
+
+     <div id="overlay_container">    <!--This is the main container that is superimposed on top of the background app container-->
+
+          <h1 class="header">        <!--An h1 tag makes the words large for a title.  We made a class called "header" so the CSS file can target this with .header  -->
+              Hello World!
+          </h1>
+
+                                     <!--Below are all the text and links in the body of the website-->
+
+          <p>The background of this app contains a few large files and may take a moment to show up.</p>
+          <p>This might be a little more complex than some &quot;Hello World&quot; applications but Blend4Web, by its nature, utilizes HTML, CSS, Javascript and the content authored in Blender. With the advent of WebGL, what was once a web page can now be more like a program we are used to running on our computer. This page loads the Blend4Web application into a background DIV element that is stationary so it does not scroll. A short CSS file tells your browser what to do with the background DIV element as well as the scrollable text area you see now. This is just normal HTML text that can be edited in the HTML file. It is inside a DIV element that is positioned overlapping the Blend4Web app. </p>
+          <p> 	Once your scene is created in Blender, you export it using the JSON method. The HTML file calls up the Javascript file which loads the JSON information into the background DIV element using its identifier; &quot;background_app&quot;. The CSS file also uses this ID to target the DIV element. The Blend4Web app is controlled using the Javascript file. Since this is a very simple app, the JS file is short. This scene has no camera controls.  The camera animation is done in Blender.          I should also mention that you can export a fully self contained HTML file from Blender using Blend4Web. No Javascrip or CSS files would be required. That is ideal in some cases but has limitations in how much control you have over how it loads and less flexibilty than controling your app with code.</p>
+          <p>Watch the tutorial video. (link to be added)</p>
+          <p><a href="../Hello_World.zip">Download the source files for this project.</a></p>
+          <p>This project has been kept simple, however many things could be done to improve how it scales and runs on various devices. On important detail is the image dmensions you use with WebGL should be POT (power of two numbers like 2, 4, 8, 16, 32 etc). The<a href="4096x2048.jpg" target="_blank"> image</a> demension of the background texture in this app are 2048 X 4098. </p>
+          <p>One of the ideas behind this project is to create a page that will load even if the WebGL part can not load for some reason. If the connection is slow, the text will load and the background app will show up when it can.<br />
+          </p>
+          <p>You can use the files for this app as a template to start your own project. If you create your own Blender scene and export it in this application's directory with the JSON method, the page would load your scene into the background. Make sure you overwrite the JSON and bin files with th same names.</p>
+          <p>If you need to learn more about the technology behind this, here is a little list to start with:</p>
+          <p>HTML: <a href="https://www.youtube.com/watch?v=MyEYbRkJh-I">YouTube Video</a></p>
+          <p>CSS: <a href="https://www.youtube.com/watch?v=qKoajPPWpmo">YouTube Video</a></p>
+          <p>Javascrip: <a href="deploy/apps/williamwelker/b4w/Hello_World/index.html">YouTube course.</a></p>
+          <p>Blender: <a href="https://www.youtube.com/watch?v=s6Se3hxgLSM">Blender For Noobs Youtube Video</a></p>
+          <p>Blend4Web: <a href="https://www.youtube.com/watch?v=nsQPI7YM-LE">Tour And Overview</a></p>
+
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+          <p>This is a bunch of text to test the scrolling.</p>
+
+
+
+
+
+
+       </div>   <!--closing tag for the overlay container div-->
+
+</body>         <!--closing body tag-->
+
+
+</html>         <!--closing HTML tag. The End.-->
