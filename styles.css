@@ -25,7 +25,7 @@ body {                                         /* This targets the body element 
     position: relative;
     width: 60%;
     z-index: 1;
-    background-color:rgba(102, 255, 255,0.6);  /* RGBA means red, green, blue, alpha.  The 0.6 in the alpha channel gives our overlay a translucent background. */
+    background-color:lavender;  /* RGBA means red, green, blue, alpha.  The 0.6 in the alpha channel gives our overlay a translucent background. */
 }
 
 .header {                                      /* This targets the h1 element with the class name of "header" in your HTML file and applies the following rules to it.  Many HTML elements can belong to the same class name. */
